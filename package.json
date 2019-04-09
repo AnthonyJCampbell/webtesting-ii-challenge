@@ -1,0 +1,8 @@
+{
+  "name": "Day2Challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AnthonyJCampbell/webtesting-ii-challenge.git",
+  "author": "AnthonyJCampbell <anthony@anthonyjcampbell.com>",
+  "license": "MIT"
+}
