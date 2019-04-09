@@ -59,23 +59,28 @@ class App extends Component {
     this.setState({
       balls: 0,
       strikes: 0,
-      hits: this.state.hits + 1
+      hits: this.state.hits + 1,
     })
   }
 
   render() {
+    const ballscount = this.state.balls
+    const strikescount = this.state.strikes
+    const foulscount = this.state.fouls
+    const hitscount = this.state.hits
     return (
       <div className="App">
-        <div data-testid="ballscount">number of Balls: {this.state.balls}</div>
+        <h1>Lambda Little League (L3)</h1>
+        <p data-testid="ballscount">number of Balls: {ballscount}</p>
         <button data-testid="balls" onClick={this.ballsHandler}>Ball</button><br />
 
-        <div data-testid="strikescount">number of Strikes: {this.state.strikes}</div>
+        <p data-testid="strikescount">number of Strikes: {strikescount}</p>
         <button data-testid="strikes" onClick={this.strikesHandler}>Strike</button><br />
 
-        <div data-testid="foulscount">number of Fouls: {this.state.fouls}</div>
+        <p data-testid="foulscount">number of Fouls: {foulscount}</p>
         <button data-testid="fouls" onClick={this.foulsHandler}>Foul</button><br />
 
-        <div data-testid="hitscount">number of Hits: {this.state.hits}</div>
+        <p data-testid="hitscount">number of Hits: {hitscount}</p>
         <button data-testid="hits" onClick={this.hitsHandler}>Hit</button>
       </div>
     );
